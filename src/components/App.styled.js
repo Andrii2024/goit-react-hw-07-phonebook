@@ -9,6 +9,7 @@ export const StyledWrapper = styled.div`
 
   border-radius: 10px;
   margin: 40px;
+  margin-left: 200px;
   box-shadow: 1px 2px 5px 4px lightblue;
   gap: 10px;
 `;
