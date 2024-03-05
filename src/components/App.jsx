@@ -4,7 +4,7 @@ import { setFilter } from '../redux/phonebook/filtersSlice';
 import { ContactForm } from './ContactForm';
 import { ContactList } from './ContactList';
 import { Filter } from './Filter';
-import { StyledWrapper } from './App.styled';
+import { StyleH1, StyledWrapper } from './App.styled';
 import {
   fetchContactsThunk,
   addContactThunk,
@@ -35,12 +35,13 @@ export const App = () => {
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter)
   );
+  const totalContactsCount = contacts.length;
 
   return (
     <StyledWrapper>
-      <h1>Phone Book</h1>
+      <StyleH1>Phone Book</StyleH1>
       <ContactForm onAddContact={handleAddContact} contacts={contacts} />
-      <h2>Contacts</h2>
+      <StyleH1>Contacts: {totalContactsCount}</StyleH1>
       <Filter filter={filter} onChange={handleFilterChange} />
       <ContactList
         contacts={filteredContacts}

@@ -40,6 +40,3 @@ export default contactsSlice.reducer;
 export const selectContacts = state => state.contacts.items;
 export const selectContactsLoading = state => state.contacts.isLoading;
 export const selectContactsError = state => state.contacts.error;
-// export const { addContact, deleteContact } = contactsSlice.actions;
-// export const selectFilter = state => state.filter.filter;
-// export const { selectContacts } = contactsSlice.selectors;
