@@ -29,7 +29,7 @@ export const StyledButton = styled.button`
 export const StyledForm = styled.form`
   border: 1px solid;
   border-radius: 8px;
-  width: 150px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   gap: 10px;
